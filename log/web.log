@@ -1,0 +1,139 @@
+2025-07-16 17:59:47,944 INFO [test_01_login.py(test_01_login_success:27)] - 登录结果:13800001001
+2025-07-16 18:00:00,185 INFO [test_01_login.py(test_02_login_fail_pwd_error:38)] - 登录结果:密码错误1次,达到3次将锁定账户
+2026-03-20 16:39:05,449 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('id', 'lg-btn')，错误详情：Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6bdc73045+14585]
+	chromedriver!GetHandleVerifier [0x7ff6bdc730b0+145f0]
+	chromedriver!(No symbol) [0x7ff6bd9ddb7d]
+	chromedriver!(No symbol) [0x7ff6bda373ae]
+	chromedriver!(No symbol) [0x7ff6bda376bc]
+	chromedriver!(No symbol) [0x7ff6bda87a57]
+	chromedriver!(No symbol) [0x7ff6bda845af]
+	chromedriver!(No symbol) [0x7ff6bda29a18]
+	chromedriver!(No symbol) [0x7ff6bda2a8f3]
+	chromedriver!GetHandleVerifier [0x7ff6bdf7ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff6bdf7536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff6bdf97d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff6bdc8f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff6bdc984dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff6bdc7c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff6bdc7c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff6bdc61387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd1b8259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffdd390af38+28]
+
+2026-03-20 16:56:40,184 INFO [test_01_login.py(test_01_login_success:27)] - 登录结果:13800001001
+2026-03-20 16:56:50,094 INFO [test_01_login.py(test_02_login_fail_pwd_error:38)] - 登录结果:密码错误1次,达到3次将锁定账户
+2026-03-20 17:24:23,013 INFO [test_02_register.py(test_02_register_fail_phone_error:33)] - 注册结果:注册抢88现金
+2026-03-20 20:55:21,506 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('link text', '立即开通')，错误详情：Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff64ef63045+14585]
+	chromedriver!GetHandleVerifier [0x7ff64ef630b0+145f0]
+	chromedriver!(No symbol) [0x7ff64eccdb7d]
+	chromedriver!(No symbol) [0x7ff64ed273ae]
+	chromedriver!(No symbol) [0x7ff64ed276bc]
+	chromedriver!(No symbol) [0x7ff64ed77a57]
+	chromedriver!(No symbol) [0x7ff64ed745af]
+	chromedriver!(No symbol) [0x7ff64ed19a18]
+	chromedriver!(No symbol) [0x7ff64ed1a8f3]
+	chromedriver!GetHandleVerifier [0x7ff64f26ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff64f26536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff64f287d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff64ef7f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff64ef884dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff64ef6c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff64ef6c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff64ef51387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd1b8259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffdd390af38+28]
+
+2026-03-20 20:55:45,081 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('link text', '立即开通')，错误详情：Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=146.0.7680.154); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff64ef63045+14585]
+	chromedriver!GetHandleVerifier [0x7ff64ef630b0+145f0]
+	chromedriver!(No symbol) [0x7ff64eccdb7d]
+	chromedriver!(No symbol) [0x7ff64ecb9310]
+	chromedriver!(No symbol) [0x7ff64ecb926c]
+	chromedriver!(No symbol) [0x7ff64ecb7ae3]
+	chromedriver!(No symbol) [0x7ff64ecb867f]
+	chromedriver!(No symbol) [0x7ff64ecd3476]
+	chromedriver!(No symbol) [0x7ff64ecd3fbb]
+	chromedriver!(No symbol) [0x7ff64ecd8c15]
+	chromedriver!(No symbol) [0x7ff64ecd8cdf]
+	chromedriver!(No symbol) [0x7ff64ed26b2e]
+	chromedriver!(No symbol) [0x7ff64ed276bc]
+	chromedriver!(No symbol) [0x7ff64ed77a57]
+	chromedriver!(No symbol) [0x7ff64ed745af]
+	chromedriver!(No symbol) [0x7ff64ed19a18]
+	chromedriver!(No symbol) [0x7ff64ed1a8f3]
+	chromedriver!GetHandleVerifier [0x7ff64f26ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff64f26536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff64f287d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff64ef7f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff64ef884dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff64ef6c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff64ef6c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff64ef51387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd1b8259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffdd390af38+28]
+
+2026-03-20 20:56:13,708 INFO [test_03_open_account.py(test_01_open_account_success:34)] - 开户结果：UserRegister OK
+2026-03-20 21:30:09,543 INFO [test_01_login_ex.py(test_01_login_success:30)] - 登录结果:13800001001
+2026-03-20 21:30:31,257 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:30:52,401 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:31:12,370 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:32:41,593 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('id', 'keywords')，错误详情：Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.154)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff64ef63045+14585]
+	chromedriver!GetHandleVerifier [0x7ff64ef630b0+145f0]
+	chromedriver!(No symbol) [0x7ff64eccdb7d]
+	chromedriver!(No symbol) [0x7ff64eca4332]
+	chromedriver!(No symbol) [0x7ff64ed578b6]
+	chromedriver!(No symbol) [0x7ff64ed73eb2]
+	chromedriver!(No symbol) [0x7ff64ed19a18]
+	chromedriver!(No symbol) [0x7ff64ed1a8f3]
+	chromedriver!GetHandleVerifier [0x7ff64f26ac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff64f26536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff64f287d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff64ef7f445+30985]
+	chromedriver!GetHandleVerifier [0x7ff64ef884dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff64ef6c634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff64ef6c7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff64ef51387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd1b8259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffdd390af38+28]
+
+2026-03-20 21:33:29,078 INFO [test_01_login.py(test_01_login_success:27)] - 登录结果:13800001001
+2026-03-20 21:34:11,710 INFO [test_01_login.py(test_01_login_success:27)] - 登录结果:13800001001
+2026-03-20 21:34:21,632 INFO [test_01_login.py(test_02_login_fail_pwd_error:38)] - 登录结果:密码错误1次,达到3次将锁定账户
+2026-03-20 21:35:13,110 INFO [test_01_login_ex.py(test_01_login_success:30)] - 登录结果:13800001001
+2026-03-20 21:35:33,463 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:35:53,698 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:36:14,035 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:38:48,862 INFO [test_01_login_ex.py(test_01_login_success:30)] - 登录结果:13800001001
+2026-03-20 21:39:08,662 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:41:20,041 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'ng-binding')，错误详情：Message: 
+
+2026-03-20 21:43:16,070 INFO [test_01_login.py(test_02_login_fail_pwd_error:38)] - 登录结果:密码错误1次,达到3次将锁定账户
+2026-03-20 21:43:33,841 INFO [test_01_login_ex.py(test_01_login_success:30)] - 登录结果:13800001001
+2026-03-20 21:43:53,641 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:44:14,032 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:44:34,022 ERROR [base.py(fd_element:27)] - 元素定位超时，定位信息：('class name', 'a-link1')，错误详情：Message: 
+
+2026-03-20 21:47:19,335 INFO [test_01_login_ex.py(test_01_login_success:35)] - 登录结果:13800001001
+2026-03-20 21:47:28,862 INFO [test_01_login_ex.py(test_01_login_success:35)] - 登录结果:密码错误1次,达到3次将锁定账户
+2026-03-20 21:47:38,805 INFO [test_01_login_ex.py(test_01_login_success:35)] - 登录结果:用户名或密码不能为空
+2026-03-20 21:47:48,809 INFO [test_01_login_ex.py(test_01_login_success:35)] - 登录结果:用户不存在
