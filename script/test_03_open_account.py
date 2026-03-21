@@ -18,7 +18,7 @@ class TestOpenAccount:
         # 打开登录页面
         self.page_login.open_url()
         # 登录成功
-        self.page_login.login("17719841967","Aa123456")
+        self.page_login.login("17719841966","Aa123456")
 
     def teardown_method(self):
         # 退出

@@ -1,4 +1,7 @@
 import os
+
+from selenium.webdriver.support.select import Select
+
 from config import PATH
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -21,7 +24,10 @@ class BasePage(object):
         try:
             # element = WebDriverWait(self.driver, self.default_timeout).until(lambda x: x.find_element(*loc))
             # 推荐写法
-            element = WebDriverWait(self.driver, self.default_timeout).until(EC.visibility_of_element_located(loc))
+            # element = WebDriverWait(self.driver, self.default_timeout).until(EC.visibility_of_element_located(loc))
+            #presence_of_element_located ：元素存在
+            element = WebDriverWait(self.driver, self.default_timeout).until(EC.presence_of_element_located(loc))
+
             return element
         except Exception as e:
             GetLog.get_log().error(f"元素定位超时，定位信息：{loc}，错误详情：{e}")
@@ -90,3 +96,14 @@ class BasePage(object):
         :return: 无
         """
         self.driver.switch_to.default_content()
+
+    def base_select_list(self, loc, text):
+        """
+        下拉框选择
+        :param loc: 元素定位方式及属性值
+        :param text: 选择的文本
+        :return: 无
+        """
+        # select = Select(driver.find_element(*loc))
+        ele = self.fd_element(loc)
+        Select(ele).select_by_visible_text(text)

@@ -19,7 +19,7 @@ class TestLogin:
 
     def test_01_register_success(self):
         # 准备数据
-        self.page_register.register("13801113018","Aa123456","8888","666666")
+        self.page_register.register("17719841966","Aa123456","8888","666666")
         # 获取结果
         result = self.page_register.get_success_result()
         log.info(f"注册结果:{result}")
