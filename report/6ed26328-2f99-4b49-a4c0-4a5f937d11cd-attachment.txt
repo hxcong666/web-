@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_05_back_login.py:26 后台登录结果：欢迎光临,
+admin

@@ -1,0 +1,1 @@
+[32mINFO    [0m root:test_03_open_account.py:34 开户结果：UserRegister OK
