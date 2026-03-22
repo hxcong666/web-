@@ -41,3 +41,34 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffdd1b8259d+1d]
 	ntdll!RtlUserThreadStart [0x7ffdd390af38+28]
 
+2026-03-21 21:02:15,736 INFO [test_01_login_01.py(test_01_login_success:27)] - 登录结果:13800001001
+2026-03-21 21:05:32,167 INFO [test_01_login_01.py(test_02_login_fail_pwd_error:38)] - 登录结果:密码错误1次,达到3次将锁定账户
+2026-03-21 21:05:48,286 INFO [test_01_login_01.py(test_01_login_success:27)] - 登录结果:13800001001
+2026-03-21 21:05:56,526 INFO [test_01_login_01.py(test_02_login_fail_pwd_error:38)] - 登录结果:密码错误1次,达到3次将锁定账户
+2026-03-21 21:10:35,901 INFO [test_01_login_ex_01.py(test_01_login_success:35)] - 登录结果:13800001001
+2026-03-21 21:10:44,721 INFO [test_01_login_ex_01.py(test_01_login_success:35)] - 登录结果:密码错误1次,达到3次将锁定账户
+2026-03-21 21:10:53,903 INFO [test_01_login_ex_01.py(test_01_login_success:35)] - 登录结果:用户名或密码不能为空
+2026-03-21 21:11:01,591 INFO [test_01_login_ex_01.py(test_01_login_success:35)] - 登录结果:用户不存在
+2026-03-21 21:20:04,749 ERROR [base.py(fd_element:33)] - 元素定位超时，定位信息：('link text', '立即开通')，错误详情：Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7d8fe3045+14585]
+	chromedriver!GetHandleVerifier [0x7ff7d8fe30b0+145f0]
+	chromedriver!(No symbol) [0x7ff7d8d4db7d]
+	chromedriver!(No symbol) [0x7ff7d8da73ae]
+	chromedriver!(No symbol) [0x7ff7d8da76bc]
+	chromedriver!(No symbol) [0x7ff7d8df7a57]
+	chromedriver!(No symbol) [0x7ff7d8df45af]
+	chromedriver!(No symbol) [0x7ff7d8d99a18]
+	chromedriver!(No symbol) [0x7ff7d8d9a8f3]
+	chromedriver!GetHandleVerifier [0x7ff7d92eac5d+31c19d]
+	chromedriver!GetHandleVerifier [0x7ff7d92e536d+3168ad]
+	chromedriver!GetHandleVerifier [0x7ff7d9307d8a+3392ca]
+	chromedriver!GetHandleVerifier [0x7ff7d8fff445+30985]
+	chromedriver!GetHandleVerifier [0x7ff7d90084dc+39a1c]
+	chromedriver!GetHandleVerifier [0x7ff7d8fec634+1db74]
+	chromedriver!GetHandleVerifier [0x7ff7d8fec7e6+1dd26]
+	chromedriver!GetHandleVerifier [0x7ff7d8fd1387+28c7]
+	KERNEL32!BaseThreadInitThunk [0x7ffdd1b8259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffdd390af38+28]
+
+2026-03-21 21:22:10,743 INFO [test_03_open_account_01.py(test_01_open_account_success:34)] - 开户结果：UserRegister OK
