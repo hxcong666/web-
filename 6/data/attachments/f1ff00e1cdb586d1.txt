@@ -1,0 +1,1 @@
+INFO     root:test_02_register.py:25 注册结果:
