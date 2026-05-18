@@ -1,9 +1,14 @@
 import json
 import logging
+import os
 import time
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from logging import handlers
+
+from webdriver_manager.chrome import ChromeDriverManager
+
 from config import PATH
 
 
@@ -17,13 +22,30 @@ class DriverTools:
     def get_driver(cls):
         """获取浏览器驱动"""
         if cls.driver is None:
-            # 创建浏览器驱动对象
-            path = r"D:/chromedriver-win64/chromedriver.exe"
-            ser = Service(executable_path=path)  # Chrome浏览器驱动服务对象
-            cls.driver = webdriver.Chrome(service=ser)  # 打开Chrome浏览器
+            options = Options()
+
+            # 判断是否在 GitHub Actions 服务器环境中运行
+            if os.environ.get('GITHUB_ACTIONS') == 'true':
+                # --- 服务器环境 (Linux) ---
+                # 添加无头模式及相关必须参数
+                options.add_argument('--headless')
+                options.add_argument('--no-sandbox')
+                options.add_argument('--disable-dev-shm-usage')
+                # 自动下载并配置对应版本的驱动
+                ser = Service(executable_path=ChromeDriverManager().install())
+            else:
+                # --- 本地电脑环境 (Windows) ---
+                # 本地使用你指定的本地驱动路径，且不开启 headless（可以看到界面）
+                path = r"D:/chromedriver-win64/chromedriver.exe"
+                ser = Service(executable_path=path)
+
+            # 打开 Chrome 浏览器
+            cls.driver = webdriver.Chrome(service=ser, options=options)
+
             # 浏览器最大化
             cls.driver.maximize_window()
             cls.driver.implicitly_wait(10)
+
         # 返回浏览器驱动对象
         return cls.driver
 
