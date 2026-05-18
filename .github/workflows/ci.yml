@@ -1,0 +1,58 @@
+name: API Automated Testing with Allure Report
+
+on:
+  push:
+    branches:
+      - main  # 如果你的默认分支是 master，请改成 master
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. 拉取你的代码
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # 2. 设置 Python 环境
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9' # 可以根据你实际使用的版本调整
+
+    # 3. 安装依赖
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # 如果项目中有 requirements.txt，可以取消下面这行的注释
+        # pip install -r requirements.txt
+        pip install pytest requests allure-pytest
+
+    # 4. 执行 Pytest 并生成 Allure 原始数据
+    - name: Run Pytest
+      run: pytest --alluredir=allure-results
+      continue-on-error: true  # ⚠️非常重要：即使有测试用例失败，也要继续往下执行生成报告
+
+    # 5. 使用第三方 action 把原始数据转换为完整的 Allure HTML 报告
+    - name: Generate Allure Report
+      uses: simple-elf/allure-report-action@master
+      if: always()
+      id: allure-report
+      with:
+        allure_results: allure-results
+        gh_pages: gh-pages
+        allure_report: allure-report
+        allure_history: allure-history
+        keep_reports: 20 # 保留最近 20 次的报告历史（体现趋势图）
+
+    # 6. 将生成的报告部署到 GitHub Pages 分支
+    - name: Deploy report to Github Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: always()
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages  # 报告将推送到这个分支
+        publish_dir: allure-history
