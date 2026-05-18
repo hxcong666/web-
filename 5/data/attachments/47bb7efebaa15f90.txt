@@ -1,0 +1,20 @@
+ERROR    root:base.py:33 元素定位超时，定位信息：('css selector', 'li.light-blue > a > span')，错误详情：Message: 
+Stacktrace:
+#0 0x55e1bfd8d22a <unknown>
+#1 0x55e1bf78bab9 <unknown>
+#2 0x55e1bf7e0046 <unknown>
+#3 0x55e1bf7e0281 <unknown>
+#4 0x55e1bf82af74 <unknown>
+#5 0x55e1bf828116 <unknown>
+#6 0x55e1bf7d3662 <unknown>
+#7 0x55e1bf7d4451 <unknown>
+#8 0x55e1bfd50d8b <unknown>
+#9 0x55e1bfd53c65 <unknown>
+#10 0x55e1bfd3d458 <unknown>
+#11 0x55e1bfd547f0 <unknown>
+#12 0x55e1bfd241c0 <unknown>
+#13 0x55e1bfd7a168 <unknown>
+#14 0x55e1bfd7a305 <unknown>
+#15 0x55e1bfd8bc5e <unknown>
+#16 0x7f2ec3e9caa4 <unknown>
+#17 0x7f2ec3f29c6c <unknown>
