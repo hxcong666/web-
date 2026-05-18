@@ -31,6 +31,9 @@ class DriverTools:
                 options.add_argument('--headless')
                 options.add_argument('--no-sandbox')
                 options.add_argument('--disable-dev-shm-usage')
+
+                # 【新增这一行】强制指定窗口大小，防止页面元素因为窗口太小被折叠或遮挡
+                options.add_argument('--window-size=1920,1080')
                 # 自动下载并配置对应版本的驱动
                 ser = Service(executable_path=ChromeDriverManager().install())
             else:
