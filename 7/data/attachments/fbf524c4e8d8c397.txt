@@ -1,0 +1,6 @@
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/drivers/chromedriver/linux64/148.0.7778.178/chromedriver-linux64/chromedriver] found in cache by browser version
+INFO     root:test_02_register.py:25 注册结果:恭喜您，注册成功！
+为了保护您的账户和资金安全，投资前请先开通托管账号!
+开通资金托管
+暂不开通托管账号，随便逛逛

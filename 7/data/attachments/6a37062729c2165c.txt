@@ -1,0 +1,22 @@
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/drivers/chromedriver/linux64/148.0.7778.178/chromedriver-linux64/chromedriver] found in cache by browser version
+ERROR    root:base.py:33 元素定位超时，定位信息：('link text', '借款管理')，错误详情：Message: 
+Stacktrace:
+#0 0x55ebd87fa16a <unknown>
+#1 0x55ebd81f76b9 <unknown>
+#2 0x55ebd824bc0d <unknown>
+#3 0x55ebd824be51 <unknown>
+#4 0x55ebd8296b24 <unknown>
+#5 0x55ebd8293cbf <unknown>
+#6 0x55ebd823f222 <unknown>
+#7 0x55ebd8240011 <unknown>
+#8 0x55ebd87bfa0b <unknown>
+#9 0x55ebd87c292d <unknown>
+#10 0x55ebd87ac948 <unknown>
+#11 0x55ebd87c34c0 <unknown>
+#12 0x55ebd8793560 <unknown>
+#13 0x55ebd87e6dd8 <unknown>
+#14 0x55ebd87e6f75 <unknown>
+#15 0x55ebd87f8bce <unknown>
+#16 0x7f33b5e9caa4 <unknown>
+#17 0x7f33b5f29c6c <unknown>
